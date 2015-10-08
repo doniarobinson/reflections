@@ -6,3 +6,19 @@ How is the staging area different from the working directory and the repository?
 
 The staging area differs from the working directory in that you don't have to stage all files in your working directory.  The working directory can be more of an experimental zone, and then you can stage the files that are necessary.  The staging area is different than the repository in that it can be modified multiple times before a commit takes place and is permanently saved.  It can make it easier to ensure you commit only when necessary, because you can remove files from the staging area if needed.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+Using git diff, you can check to see which changes you have made since the last commit.  This gives you a chance to remove files from the staging area if some seem to not fit in the logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+There are often distinct points in time when I reach a natural pausing point in development.  For instance, while working on a grading tool, I may commit when it feels like I've completed a certain step.  If I have a few different ideas about how to proceed, I might make a branch (or more than one) to try out different ways of doing the next step.    My master will still work perfectly.
+
+How do the diagrams help you visualize the branch structure?
+
+It really helps cement the idea of commits having parents, and that you can't move both directions within the log structure.  It can help you see where an unreachable commit might be (and if that is or is not something you want).
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches magically keeps the changes that have been made to both branches, regardless of if there have been additions or deletions.  It is represented in the diagram connected back to both branches because both prior commits are considered parents of the merge commit, and we want to make sure to understand we are keeping the previous commits of both branches.
+
