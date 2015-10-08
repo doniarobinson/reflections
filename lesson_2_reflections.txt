@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+This sets up a skeleton for the repository, including the .git sub-directory which contains git metadata.  You need this as the foundation for adding and tracking files later.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area differs from the working directory in that you don't have to stage all files in your working directory.  The working directory can be more of an experimental zone, and then you can stage the files that are necessary.  The staging area is different than the repository in that it can be modified multiple times before a commit takes place and is permanently saved.  It can make it easier to ensure you commit only when necessary, because you can remove files from the staging area if needed.
+
