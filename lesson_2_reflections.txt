@@ -22,3 +22,7 @@ What is the result of merging two branches together? Why do we represent it in t
 
 Merging two branches magically keeps the changes that have been made to both branches, regardless of if there have been additions or deletions.  It is represented in the diagram connected back to both branches because both prior commits are considered parents of the merge commit, and we want to make sure to understand we are keeping the previous commits of both branches.
 
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros: for small, obvious merges, you don't have to go through line by line.
+Cons: it could merge incorrectly, or cause slightly different behavior than expected.
